@@ -1,9 +1,9 @@
 n=int(input())
 l=[]
-for i in range(1,n*n):
+for i in range(1,n**2):
     if i==1:
         l.append(i)
-    else:
+    if i>1:
         for j in range(2,i):
             if i%j==0:
                 break
@@ -18,4 +18,6 @@ if n in l:
         print("prime but not a circular prime")
 else:
     print("not prime")
-    
+            
+
+        
